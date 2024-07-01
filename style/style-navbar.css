@@ -1,0 +1,168 @@
+
+/*Header und Navigationsbar*/
+#header{
+    padding: 5px 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    z-index: 999;
+    position: sticky;
+    top: 0;
+    left: 0;
+}
+
+#navbar span{
+    cursor: pointer;
+}
+
+#header img{
+    max-height: 100px;
+}
+
+#navbar{
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 1px #ffff;
+}
+
+#navbar .ontop{
+    padding: 5px 10px;
+    margin: 0 10px;
+    border-radius: 10px;
+    transition: 0.6s;
+}
+
+
+
+#navbar .ontop-a{
+    text-decoration: none;
+}
+
+.context-menu {
+    min-width: 260px;
+    display: none;
+    position: absolute;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    z-index: 1;
+    border-radius: 20px;
+    padding: 10px;
+}
+
+.context-menu ul{
+    list-style-type: none;
+}
+
+.context-menu li{
+    padding: 5px;
+    margin: 5px 0;
+}
+
+.context-menu a{
+    transition: 0.1s;
+    padding: 5px;
+    border-radius: 10px;
+}
+
+.context-menu a:hover{
+    font-weight: 1000;
+}
+
+#header li:hover .context-menu{
+    display: block;
+    opacity: 100%;
+}
+
+
+#mobile{
+    display: none;
+}
+
+#close{
+    display: none;
+}
+
+
+@media(max-width: 1300px){
+    .context-menu a{
+        font-size: 17px;
+    }
+}
+
+/*Mobile Menu*/
+
+@media (max-width: 950px) {
+    #navbar{
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        position: fixed;
+        top: 0;
+        right: -320px;
+        height: 100vh;
+        width: 320px;
+        backdrop-filter: saturate(120%) blur(20px);
+        -webkit-backdrop-filter: saturate(120%) blur(20px);
+        padding: 80px 0 0 10px;
+        overflow-y: auto;
+        transition: 0.3s;
+    }  
+    
+    @media(prefers-color-scheme: light){
+        #navbar{
+            background: rgba(228, 228, 228, 0.744);
+        }
+    }
+    @media(prefers-color-scheme: dark){
+        #navbar{
+            background: rgba(53, 53, 53, 0.744);
+        }
+    }
+
+    #navbar.active{
+        right: 0px;
+    }
+
+    #navbar .ontop{
+        margin-bottom: 25px;
+    }
+
+    #navbar .ontop a{
+        font-size: 18px;
+    }
+
+    #mobile{
+        display: initial;
+    }
+
+    #mobile span{
+        font-size: 30px;
+        cursor: pointer;
+    }
+
+    #close{
+        display: initial;
+        position: absolute;
+        top: 30px;
+        left: 30px;
+        font-size: 30px;
+    }
+    #header{
+        padding: 5px 20px;
+    }
+
+    #header li:hover .context-menu{
+        display: block;
+        position: relative;
+    }
+
+    #header img{
+        max-height: 80px;
+    }
+}
+

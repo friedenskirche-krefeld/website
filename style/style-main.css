@@ -1,0 +1,252 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quattrocento+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+/*Allgemeine Dinge*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body{
+    width: 100%;
+    font-family: "Quattrocento Sans", sans-serif;
+    scroll-behavior: smooth;
+}
+
+/*Dark/Whitemode Anpassung an Gerät*/
+
+@media (prefers-color-scheme: dark) {
+    .light-hero-img{
+        display: none;
+    }
+    body {
+        background-color: #000000;
+        color: #ffffff;
+    }
+    a{
+        color: #ffffff;
+    }
+    .context-menu{
+        background-color: #0000009f;
+    }
+    .context-menu a{
+        color: #ffffff;
+        background-color: #202020;
+    }
+    #header{
+        background: rgba(53, 53, 53, 0.744);
+    }
+    #navbar .ontop:hover{
+        background-color: #4d4d4d;
+    }
+    ::selection {
+        background-color: #ffffff; 
+        color: #000000;
+    }
+
+    ::-moz-selection {
+        background-color: #ffffff; 
+        color: #000000; 
+    }
+    #images-library a{
+        background-color: #2d2d2d;
+        color: white;
+        border: 1px solid #626262;
+    }
+    footer{
+        background-color: #1d1d1d;
+    }
+    .impressum:hover{
+        background-color: #4d4d4d;
+    }
+}
+
+@media (prefers-color-scheme: light) {
+    .dark-hero-img{
+        display: none;
+    }
+
+    body {
+        background-color: #f4f4f4;
+        color: #000000;
+    }
+    a{
+        color: #000000;
+    }
+    .context-menu{
+        background-color: #ffffffa5;
+    }
+    .context-menu a{
+        color: #000000;
+        background-color: #efefef;
+    }
+    #header{
+        background: rgba(228, 228, 228, 0.744);
+    }
+    #navbar .ontop:hover{
+        background-color: #c8c8c8;
+    }
+    /* Auswahl Style*/
+    ::selection {
+        background-color: #1d1d1d; 
+        color: #f7f7f7; 
+
+    }
+    ::-moz-selection {
+        background-color: #1d1d1d; 
+        color: #f7f7f7; 
+    }
+    #images-library a{
+        background-color: #cecece;
+        color: #000000;
+        border: 1px solid #b9b9b9;
+    }
+    footer{
+        background-color: #d5d5d5;
+    }
+    .impressum:hover{
+        background-color: #b9b9b9;
+    }
+}
+
+
+
+h1{
+    font-size: 60px;
+    font-weight: 700;
+}
+
+h2{
+    font-size: 50px;
+    font-weight: 600;
+}
+
+h3{
+    font-size: 40px;
+    font-weight: 500;
+}
+
+h4{
+    font-family: "Noto Serif", serif;
+    font-size: 30px;
+    font-weight: 500;
+}
+
+h5{
+    font-family: "Noto Serif", serif;
+    font-size: 20px;
+    font-weight: 400;
+}
+
+h6{
+    font-family: "Noto Serif", serif;
+    font-size: 20px;
+    font-weight: 200;
+}
+
+p{
+    font-family: "Noto Serif", serif;
+    color: gray;
+}
+
+a{
+    text-decoration: none;
+    font-family: "Quattrocento Sans", sans-serif;
+    font-size: 19px;
+}
+
+.context-menu a{
+    font-family: "Noto Serif", serif;
+    font-size: 15px;
+}
+
+a.normal{
+    font-weight: 600;
+    border-radius: 15px;
+    padding: 10px 20px;
+    border: 2px solid #ffffff;
+    background-color: #ffffff00;
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    margin: 25px 20px;
+    transition: 0.3s;
+}
+
+a.normal:hover{
+    background-color: #ffffff89;
+    color: #000000;
+    border: 2px solid #000000;
+}
+
+@media(max-width: 950px){
+    h1{
+        font-size: 45px;
+    }
+    
+    h4{
+        font-size: 25px;
+    }
+    
+    h5{
+        font-size: 20px;
+    }
+    
+    h6{
+        font-size: 20px;
+    }
+    
+    p{
+        font-size: 18px;
+    }
+}
+
+@media(max-width: 730px){
+    h1{
+        font-size: 38px;
+    }
+    
+    h4{
+        font-size: 25px;
+        font-weight: 600;
+    }
+    
+    h5{
+        font-size: 20px;
+    }
+    
+    h6{
+        font-size: 18px;
+    }
+    
+    p{
+        font-size: 15px;
+    }
+    a.normal{
+            padding: 9px 17px;
+            font-size: 17px;
+    }
+}
+
+@media(max-width: 520px){
+    h1{
+        font-size: 33px;
+    }
+    h4{
+        font-size: 20px;
+        font-weight: 500;
+    }
+    h5{
+        font-size: 15px;
+    }
+    a.normal{
+        padding: 7px 15px;
+    }
+}
+
+@media(max-width: 236px){
+    body{
+        display: none;
+    }
+}

@@ -1,0 +1,648 @@
+
+/*hero section*/
+.hero{
+    height: 650px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    background-image: url(https://friedenskirche-krefeld.github.io/json/images/hero-background/IMG_0568.jpeg);
+    background-size: cover;
+    background-position: center;
+    margin: 10px;
+}
+
+.hero h1{
+    color: #fff;
+}
+
+.hero h4{
+    color: #fff;
+}
+
+.hero a{
+    color: #fff;
+}
+
+.hero h5{
+    color: #fff;
+    padding: 4px 10px;
+    background-color: #69c315;
+    margin-bottom: 5px;
+    border-radius: 10px;
+}
+
+.hero-insta{
+    background-image: linear-gradient(to right, #ebe012 0%, #e13a3a 25%, #ee14ee 50%, #bc0df6 75%, #3c34e0 100%);
+    height: 400px;
+}
+
+.hero-announce{
+    background-image: url(https://friedenskirche-krefeld.github.io/json/images/hero-background/Konfirmation.jpg);
+}
+
+.hero-gemeinde{
+    background-image: url();
+}
+
+/*Artikel Section*/
+#articles{
+    text-align: center;
+    margin: 50px 10px;
+}
+
+#articles .articles-container{
+    display: flex;
+    text-align: start;
+    overflow-x: auto;
+    white-space: nowrap;
+    mask-image: linear-gradient(to right, rgba(0,0,0,0), rgba(0,0,0,1) 5%, rgba(0,0,0,1) 95%, rgba(0,0,0,0));
+    width: 100%;
+    max-width: 1650px;
+    margin: 20px auto;
+    overflow-y: hidden;
+}
+
+#articles .article img{
+    border-radius: 20px;
+    width: 250px;
+    height: 187px;
+    object-fit: cover;
+    transition: 0.3s;
+}
+
+#articles .article{
+    height: 380px;
+    max-width: 295px;
+    white-space: wrap;
+    border-radius: 30px;
+    padding: 20px;
+    margin: 0 10px;
+    transition: 0.3s;
+}
+
+.scroll-button {
+    margin: 10px 0;
+    padding: 10px 20px;
+    border-radius: 100px;
+    cursor: pointer;
+}
+.scroll-button:disabled {
+    background-color: #cccccc5a;
+    cursor: not-allowed;
+}
+
+/*Gottesdienst & Veranstaltungen Section*/
+#gottesdienst-info{
+    margin: 80px 20px;
+    text-align: center;
+}
+
+#gottesdienst-info .gottesdienst-container{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    max-width: 1600px;
+    margin: 0 auto;
+}
+
+#gottesdienst-info .gottesdienst{
+    display: flex;
+    text-align: start;
+    min-width: 299px;
+    padding: 5px;
+    margin: 10px;
+    border-radius: 20px;
+    transition: 0.3s;
+}
+
+#gottesdienst-info .gottesdienst:hover{
+    scale: 1.03;
+}
+
+#gottesdienst-info .gottesdienst div{
+    padding: 15px;
+}
+
+
+.gottesdienst h1{
+    font-size: 47px;
+}
+
+.gottesdienst h4{
+    font-size: 23px;
+}
+
+.gottesdienst h5{
+    font-size: 17px;
+}
+
+.gottesdienst p{
+    font-size: 15px;
+}
+
+.gottesdienst1{
+    min-width: none;
+}
+
+/*Bildergalerie*/
+#images-library{
+    margin: 50px 0;
+    text-align: center;
+}
+
+#images-library .image-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 100%;
+    max-width: 1650px;
+    margin: 20px auto;
+}
+
+#images-library .image-container img{
+    width: 300px;
+    height: 225px;
+    margin: 10px;
+    border-radius: 20px;
+    object-fit: cover;
+    transition: 0.3s;
+}
+
+#images-library .image-container img:hover{
+    scale: 1.03;
+    border-radius: 5px;
+}
+
+#images-library a {
+    margin: 10px 0;
+    padding: 10px 20px;
+    border-radius: 100px;
+    cursor: pointer;
+}
+
+/*Footer & Impressum*/
+footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 50px;
+}
+
+.contact-container{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+footer img{
+    max-height: 100px;
+}
+
+footer div{
+    padding: 20px;
+}
+
+.impressum{
+    text-align: center;
+    border-radius: 20px;
+    transition: 0.3s;
+}
+
+/* Artikel Seite*/
+#article-full-size{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+#article-full-size .article-content{
+    width: 80%;
+    hyphens: auto;
+    text-align: justify;
+    margin: 50px 0;
+}
+
+#article-full-size .article-header{
+    width: 100%;
+    color: #ffff;
+    text-align: center;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 400px;
+}
+
+#article-full-size .article-header .content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    width: 100%;
+    height: 400px;
+    padding: 50px;
+    backdrop-filter: brightness(65%);
+    -webkit-backdrop-filter: brightness(65%);
+}
+
+#article-full-size .article-header-bg-was-ist-gottesdienst{
+    background-image: url(https://www.friedenskirche-krefeld.de/wp-content/uploads/2019/10/gottesdienst.jpg);
+}
+
+#article-full-size .article-header-bg-abendmahl{
+    background-image: url(https://www.friedenskirche-krefeld.de/wp-content/uploads/2019/10/gottesdienst.jpg);
+}
+
+#article-full-size .article-header-bg-aemter{
+    background-image: url(https://www.friedenskirche-krefeld.de/wp-content/uploads/2021/04/asdgdsasdg.png);
+}
+
+#article-full-size .article-header-bg-presbyterium{
+    background-image: url(https://friedenskirche-krefeld.github.io/json/images/photos/IMG_1212.jpeg);
+}
+
+#article-full-size .article-header-bg-presbyterium-2{
+    background-image: url(https://friedenskirche-krefeld.github.io/json/images/photos/DSCF5566.jpeg);
+}
+
+#article-full-size .article-header-bg-neue-website{
+    background-image: url(https://friedenskirche-krefeld.github.io/json/images/hero-background/Code-screenshot.png);
+}
+
+/*Ämter Styles*/
+.person-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.person img{
+    width: 300px;
+    height: 350px;
+    object-fit: cover;
+    object-position: top;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+
+.person img:hover{
+    scale: 1.02;
+}
+
+.person{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    white-space: wrap;
+    width: 350px;
+    height: 500px;
+    margin: 20px;
+    border-radius: 20px;
+}
+
+.person .person-contact{
+    padding-top: 10px;
+}
+
+/*Presbyterium Button Style*/
+.presbyterium-description a.normal::after{
+    content: '';
+    z-index: 1;
+    position: absolute;
+    background-color: #00000037;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    border-radius: 13px;
+}
+
+/*Split-Screen Kacheln Styles*/
+
+#split{
+    display: flex;
+}
+
+.hero-split{
+    width: 50%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-top: 0;
+}
+
+.hero-split:nth-child(1){
+    margin-right: 5px;
+}
+
+.hero-split:nth-child(2){
+    margin-left: 5px;
+}
+
+.hero-split p{
+    color: #ffffff;
+}
+
+
+.hero-split .intents{
+    -webkit-backdrop-filter: blur(20px);
+    backdrop-filter: blur(20px);
+    padding: 15px;
+    border-radius: 15px;
+}
+
+.hero-kirche-bg{
+    background-image: url(https://www.friedenskirche-krefeld.de/wp-content/uploads/2019/09/header_01.jpg);
+    height: 550px;
+}
+
+
+.hero-kirche-info-1{
+    background-image: url(https://www.friedenskirche-krefeld.de/wp-content/uploads/2021/04/asdgdsasdg.png);
+}
+
+.hero-kirche-info-2{
+    background-image: url(https://friedenskirche-krefeld.github.io/json/images/photos/IMG_1212.jpeg);
+}
+
+/*Gemeinde Kachel Style*/
+.article-header-bg-gemeinde{
+    background-image: url(https://www.friedenskirche-krefeld.de/wp-content/uploads/2019/09/header_03.jpg);
+    margin: 0 10px;
+}
+
+.normal-article-kirche{
+    color: #ffff;
+}
+
+.normal-article-kirche:hover{
+    color: #000000;
+}
+
+
+
+/*Dark / Whitemode Anpassungen*/
+@media (prefers-color-scheme: dark){
+    .person{
+        background-color: #2d2d2d;
+    }
+    #gottesdienst-info .gottesdienst{
+        background-color: #323232;
+    }
+    #gottesdienst-info .gottesdienst:hover{
+        background-color: #5a5a5a;
+    }
+    #articles .article{
+        background-color: #313131;
+        border: 1px solid #494949;
+    }
+    #articles .article:hover{
+        background-color: #414141;
+    }
+    .scroll-button{
+        background-color: #2d2d2d;
+        color: white;
+        border: 1px solid #626262;
+    }
+    .scroll-button:disabled{
+        color: #f2f2f266;
+    }
+    .article h5{
+        color: #c4c4c4;
+        }
+}
+
+@media (prefers-color-scheme: light){
+    .person{
+        background-color: #dddddd;
+    }
+    #gottesdienst-info .gottesdienst{
+        background-color: #d4d4d4;
+    }
+    #gottesdienst-info .gottesdienst:hover{
+        background-color: #adadad;
+    }
+    #articles .article{
+        background-color: #d1d1d1;
+        border: 1px solid #c5c5c5;
+    }
+    #articles .article:hover{
+        background-color: #c0c0c0;
+    }
+    .scroll-button{
+        background-color: #cecece;
+        color: #000000;
+        border: 1px solid #b9b9b9;
+    }
+    .scroll-button:disabled{
+        color: #00000061;
+    }
+    .article h5{
+    color: #3a3a3a;
+    }
+}
+
+/*Größenanpassungen*/
+
+@media (max-width: 1170px){
+    .hero1{
+        height: 550px;
+    }
+}
+
+@media (max-width: 950px) {
+    #articles .article img{
+        width: 200px;
+        height: 150px;
+    }
+    
+    #articles .article{
+        height: 330px;
+        max-width: 235px;
+        white-space: wrap;
+        border-radius: 30px;
+        padding: 15px;
+        margin: 0 10px;
+    }
+    .hero1{
+        height: 500px;
+    }
+    .person img{
+        width: 250px;
+        height: 300px;
+        object-fit: cover;
+        object-position: top;
+        border-radius: 10px;
+    }
+    
+    .person{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        white-space: wrap;
+        width: 300px;
+        height: 450px;
+        margin: 20px;
+        border-radius: 20px;
+    }
+    .person h5{
+        font-size: 18px;
+    }
+    .person p{
+        font-size: 15px;
+    }
+}
+
+@media(max-width: 730px){
+    .hero{
+        height: 450px;
+        margin: 5px 0;
+    }
+    .hero-insta{
+        height: 300px;
+    }
+    #images-library .image-container img{
+        width: 170px;
+        height: 127px;
+        margin: 10px;
+        border-radius: 15px;
+    }
+    #articles{
+        margin: 50px 0;
+    }
+    #articles .articles-container{
+        mask-image: none;
+        white-space: wrap;
+  }
+}
+
+@media(max-width: 680px){
+
+    #gottesdienst-info{
+        margin: 30px 10px;
+    }
+
+    #gottesdienst-info .gottesdienst{
+        display: block;
+        text-align: center;
+        min-width: 158px;
+        padding: 0;
+        margin: 8px;
+    }
+    #gottesdienst-info .gottesdienst div{
+        padding: 8px 15px;
+    }
+    
+    
+    .gottesdienst h1{
+        font-size: 47px;
+    }
+    
+    .gottesdienst h4{
+        font-size: 15px;
+    }
+    
+    .gottesdienst h5{
+        font-size: 13px;
+    }
+    
+    .gottesdienst p{
+        font-size: 13px;
+    }
+
+    #gottesdienst-info .gottesdienst1{
+        display: flex;
+    }
+
+
+
+    #gottesdienst-info .gottesdienst1{
+        display: flex;
+        text-align: start;
+        width: 330px;
+        padding: 5px;
+    }
+    
+    #gottesdienst-info .gottesdienst1 div{
+        padding: 12px;
+    }
+    
+    
+    .gottesdienst1 h4{
+        font-size: 18px;
+    }
+    
+    .gottesdienst1 h5{
+        font-size: 17px;
+    }
+    
+    .gottesdienst1 p{
+        font-size: 15px;
+    }
+    .person-container{
+        width: 100%;
+        overflow-x: auto;
+        flex-wrap: nowrap;
+        justify-content:flex-start;
+        overflow-y: hidden;
+    }
+    .person{
+        width: 400px;
+        padding: 20px;
+        height: 400px;
+        margin: 20px 10px;
+    }
+    .person img{
+        width: 230px;
+        height: 250px;
+    }
+}
+
+
+
+@media(max-width: 520px){
+    .hero{
+        height: 370px;
+    }
+    .hero-insta{
+        height: 270px;
+    }
+    .article h4{
+        font-size: 25px;
+    }
+    .article h5{
+        font-size: 20px;
+    }
+    .article p{
+        font-size: 18px;
+    }
+    #article-full-size .article-content{
+        width: 93%;
+    }
+    #split{
+        display: block;
+    }
+    .hero-split{
+        width: 100%;
+        height: 220px;
+    }
+}
+
+
+@media(max-width: 380px){
+    #images-library .image-container img{
+        width: 150px;
+        height: 112px;
+    }
+}
